@@ -1,7 +1,7 @@
 
-## About This Project
+## About The Project
 
-A Demo Project of Expense Tracker Manager. Consisting to following tools
+A Demo Project of Expense Tracker Manager.
 1. Laravel 10
 2. REST API
 3. Design pattern - Repository, Service, DTO

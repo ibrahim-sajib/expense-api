@@ -10,16 +10,14 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run(): void
     {
         User::create([
-            'name' => 'hishabee',
-            'email' => 'hishabee@gmail.com',
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
-            'password' => Hash::make(12345678),
+            'password' => Hash::make('admin'),
             'remember_token' => Str::random(10),
         ]);
     }

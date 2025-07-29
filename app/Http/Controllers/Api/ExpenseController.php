@@ -22,10 +22,12 @@ class ExpenseController extends Controller
      */
     public function index()
     {
+        
         $perPage = request('per_page');
         $data = $this->expenseRepository->allPaginate($perPage);
         $metadata['count'] = count($data);
         $metadata['total_expense'] = (new ExpenseService())->calculateTotalExpense();
+        
         if(!$data){
             return $this->ResponseSuccess([], null, 'No Data Found!');
         }
